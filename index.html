@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农民工会</title>
+    <style>
+         #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #50b3a2;
+            z-index: 1000; /* 确保导航栏在其他内容之上 */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .wgiger {
+            display: flex;
+            justify-content: center; /* 使内容在水平方向上居中 */
+            margin-right: 28px; /* 确保有单位 */
+            gap: 20px; /* 两个项目之间的间隔 */
+        }
+
+        .one_x,.two_x,.three_x,.four_x {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .texth1_p {
+            padding: 0; /* 移除内边距 */
+            margin: 0; /* 移除外边距 */
+            text-align: center; /* 使图片居中 */
+        }
+        .texth1_p img{
+            width: auto; /* 图片宽度保持原始尺寸 */
+            height: auto; /* 高度自适应 */
+            display: inline-block; /* 使用inline-block使图片居中 */
+            max-width: 100%; /* 确保图片不会超出父容器 */
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .xxj{
+            display: flex;
+        }
+        .xxj1,.xxj2,.xxj3,.xxj4 {
+            display: block;
+        }
+        .xxj img{
+            width: 200px;
+            height: 200px;
+        }
+         /* 定义动画 */
+        @keyframes fadeInFromBottom {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* 应用动画到目标元素 */
+        .wgiger,.xxj {
+          opacity: 0; /* 初始状态为不可见 */
+          animation: fadeInFromBottom 1s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <div id="branding">
+                <h1>农民工会</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">首页</a></li>
+                    <li><a href="#projects">项目介绍</a></li>
+                    <li><a href="#reny">人员介绍</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+            <div class="texth1_p"> 
+                <img src="png/1.png" alt="农民工会">
+            </div>
+            <div class="overlay">
+                <h2 style="text-align: center;">农民工会</h2>
+                <h2 style="text-align: center;">Farmers Association</h2>
+            </div>
+        <section id="projects">
+            <h2 style="text-align: center;">项目介绍</h2>
+            <div class="wgiger">
+                <div class="one_x">
+                    <h2>土豆</h2>
+                    <img src="png/potato.jpg" alt="potato",max-width="60px",max-height="60px">
+                    <p style="text-align: center;"><b>我们的最初项目，</b></p>
+                    <p style="text-align: center;"><b>我们为全服玩家提供土豆</b></p>
+                </div>
+                <div class="two_x">
+                    <h2>仙人掌</h2>
+                    <img src="png/R-C.png" alt="R-C",max-width="60px",max-height="60px">
+                    <p style="text-align: center;"><b>我们全自动的仙人掌，</b></p>
+                    <p style="text-align: center;"><b>让我们可以做到金钱循环</b></p>
+                </div>
+                <div class="three_x">
+                    <h2>代工</h2>
+                    <img src="png/1036.png" alt="代工">
+                    <p style="text-align: center;"><b>我们提供代工服务，</b></p>
+                    <p style="text-align: center;"><b>只要你可以付起价钱</b></p>
+                </div>
+                <div class="four_x">
+                    <h2>等量代换</h2>
+                    <img src="png/960.png" alt="等量代换">
+                    <p style="text-align: center;"><b>我们提供等量代换服务，</b></p>
+                    <p style="text-align: center;"><b>让你虽然没钱但可以体验</b></p>
+                </div>
+            </div>
+            <div class="xxj">
+                <img src="png/potato.jpg">
+                <div class="xxj1">
+                    <h2>土豆</h2>
+                    <p>我们的最初项目，我们一直在位这个项目工作，我们为全服玩家提供土豆</p>
+                    <p>使用土豆的作用不仅是可以吃，是一种重要的信仰来源，这可以让你快速升级</p>
+                    <p>如果你需要大量的土豆可以查询[农民]的创始人AIE_fish</p>
+                </div>
+                <img src="png/R-C.png">
+                <div class="xxj2">
+                    <h2>仙人掌</h2>
+                    <p>我们全自动的仙人掌，让我们可以做到金钱循环，从而可以让我们自己获取金钱</p>
+                    <p>我想很多人都不需要，如果你需要也可以来找AIE_fish购买</p>
+                </div>
+            </div>
+            <div class="xxj">
+                <img src="png/1036.png">
+                <div class="xxj3">
+                    <h2>代工</h2>
+                    <p>我们提供代工服务，只要你可以付起价钱，我们可以代你生产任何物品</p>
+                    <p>帮助你进行一些枯燥乏味的重复性工作，胡总和是自己没有能力的工作</p>
+                </div>
+
+                <img src="png/960.png">
+                <div class="xxj4">
+                    <h2>等量代换</h2>
+                    <p>我们提供等量代换服务，让你虽然没钱但可以体验，我们可以代你换取物品</p>
+                    <p>你可以使用金币换取rmb或者是宝石，这对一些玩家来说很有用</p>
+            </div>
+        </section>
+        <section id="reny">
+            <h2>人员介绍</h2>
+            <div class="wgiger">
+                <div class="one_x">
+                    <h2>AIE_fish</h2>
+                    <img src="png/pepleo/AIE_fish.png">
+                    <p><b>创始人 外号:吸血鬼女仆q</b></p>
+                    <p>农民公会的创始人</p>
+                </div>
+                <div class="two_x">
+                    <h2>xianyan666</h2>
+                    <img src="png/pepleo/xianyan666.png">
+                    <p><b>开发者 外号:苦力怕</b></p>
+                    <p>二把手，元老之一但是比fyx在线时间多</p>
+                </div>
+                <div class="three_x">
+                    <h2>A_QIUMO_A</h2>
+
+                    <img src="png/pepleo/A_QIUMO_A.png">
+                    <p><b>开发者 外号:???</b></p>
+                    <p>新人，没有过多的介绍</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    </script>
+</body>
+</html>
