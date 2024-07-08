@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>农民工会</title>
     <style>
-         #navbar {
+        /* 添加一些基本样式 */
+        #navbar {
             position: fixed;
             top: 0;
             width: 100%;
             background-color: #50b3a2;
-            z-index: 1000; /* 确保导航栏在其他内容之上 */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            z-index: 1000;
         }
         .container {
             width: 80%;
@@ -62,6 +57,31 @@
             color: #ffffff;
             font-weight: bold;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         .wgiger {
             display: flex;
             justify-content: center; /* 使内容在水平方向上居中 */
@@ -75,7 +95,11 @@
             align-items: center;
             text-align: center;
         }
-
+        .sd {
+            display: block;
+            opacity: 0; /* 初始状态为不可见 */
+            animation: fadeInFromBottom 1s ease-in-out forwards;
+        }
         .texth1_p {
             padding: 0; /* 移除内边距 */
             margin: 0; /* 移除外边距 */
@@ -135,7 +159,8 @@
                 <ul>
                     <li class="current"><a href="index.html">首页</a></li>
                     <li><a href="#projects">项目介绍</a></li>
-                    <li><a href="#reny">人员介绍</a></li>
+                    <li><a href="#reny">人员介绍/招聘</a></li>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -150,7 +175,9 @@
                 <h2 style="text-align: center;">Farmers Association</h2>
             </div>
         <section id="projects">
-            <h2 style="text-align: center;">项目介绍</h2>
+            <div class="wgiger"> 
+             <h2 style="text-align: center;">项目介绍</h2>
+            </div>
             <div class="wgiger">
                 <div class="one_x">
                     <h2>土豆</h2>
@@ -208,7 +235,9 @@
             </div>
         </section>
         <section id="reny">
-            <h2>人员介绍</h2>
+            <div class="wgiger"> 
+              <h2 style="text-align: center;">人员介绍</h2>
+            </div>
             <div class="wgiger">
                 <div class="one_x">
                     <h2>AIE_fish</h2>
@@ -229,6 +258,13 @@
                     <p><b>开发者 外号:???</b></p>
                     <p>新人，没有过多的介绍</p>
                 </div>
+            </div>
+            <div class="sd"> 
+              <h2 style="text-align: center;">招聘</h2>
+              <p style="text-align: center;">1.你需要一个至少100块的土豆田,你可以更多，但这是不可能少的</p>
+              <p style="text-align: center;">2.你需要一个至少15星的锄头，你可以更多，你可以有其他的更多星装备可以代替</p>
+              <p style="text-align: center;"><b>*3.你需要会开一些小的辅助mod(包括G)，不一定的</b></p>
+              <p style="text-align: center;">4.你需要入坑12天左右，如果你小于这个天数那么你的审核十分严格</p>
             </div>
         </section>
     </div>
