@@ -130,6 +130,23 @@
             width: 200px;
             height: 200px;
         }
+        /* styles.css */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
          /* 定义动画 */
         @keyframes fadeInFromBottom {
           from {
@@ -180,21 +197,8 @@
         <section id="projects">
             <div class="sd"> 
              <h2 style="text-align: center;">项目介绍</h2>
-             <p style="text-align: center;" class="red-text">因为开始往淘金以外的方向扩展所以不确定项目，其中包括土豆与仙人掌一类的农业项目，代工与等量代换一类的服务项目</p>
             </div>
             <div class="wgiger">
-                <div class="one_x">
-                    <h2 class="red-text">土豆</h2>
-                    <img src="png/potato.jpg" alt="potato",max-width="60px",max-height="60px">
-                    <p style="text-align: center;"><b>我们的最初项目，</b></p>
-                    <p style="text-align: center;"><b>我们为全服玩家提供土豆</b></p>
-                </div>
-                <div class="two_x">
-                    <h2 class="red-text">仙人掌</h2>
-                    <img src="png/R-C.png" alt="R-C",max-width="60px",max-height="60px">
-                    <p style="text-align: center;"><b>我们全自动的仙人掌，</b></p>
-                    <p style="text-align: center;"><b>让我们可以做到金钱循环</b></p>
-                </div>
                 <div class="three_x">
                     <h2>代工</h2>
                     <img src="png/1036.png" alt="代工">
@@ -206,21 +210,6 @@
                     <img src="png/960.png" alt="等量代换">
                     <p style="text-align: center;"><b>我们提供等量代换服务，</b></p>
                     <p style="text-align: center;"><b>让你虽然没钱但可以体验</b></p>
-                </div>
-            </div>
-            <div class="xxj">
-                <img src="png/potato.jpg">
-                <div class="xxj1">
-                    <h2>土豆</h2>
-                    <p>我们的最初项目，我们一直在位这个项目工作，我们为全服玩家提供土豆</p>
-                    <p>使用土豆的作用不仅是可以吃，是一种重要的信仰来源，这可以让你快速升级</p>
-                    <p>如果你需要大量的土豆可以查询[农民]的创始人AIE_fish</p>
-                </div>
-                <img src="png/R-C.png">
-                <div class="xxj2">
-                    <h2>仙人掌</h2>
-                    <p>我们全自动的仙人掌，让我们可以做到金钱循环，从而可以让我们自己获取金钱</p>
-                    <p>我想很多人都不需要，如果你需要也可以来找AIE_fish购买</p>
                 </div>
             </div>
             <div class="xxj">
@@ -246,14 +235,14 @@
                 <div class="one_x">
                     <h2>AIE_fish</h2>
                     <img src="png/pepleo/AIE_fish.png">
-                    <p><b>创始人 外号:吸血鬼女仆q</b></p>
+                    <p><b>创始人 外号:??</b></p>
                     <p>农民公会的创始人</p>
                     
                 </div>
                 <div class="two_x">
                     <h2>xianyan666</h2>
                     <img src="png/pepleo/xianyan666.png">
-                    <p><b>开发者 外号:苦力怕</b></p>
+                    <p><b>开发者 外号:苦力怕q</b></p>
                     <p>二把手，元老之一但是比fyx在线时间多</p>
                 </div>
                 <div class="three_x">
@@ -263,6 +252,12 @@
                     <p><b>开发者 外号:???</b></p>
                     <p>新人，没有过多的介绍</p>
                     
+                </div>
+                <div class="one_x">
+                    <h2>Andy6662011</h2>
+                    <img src="png/pepleo/Andy6662011.jpg">
+                    <p><b>开发者 外号:???</b></p>
+                    <p>新人，没有过多的介绍</p>
                 </div>
             </div>
         </section>
@@ -276,6 +271,7 @@
                     <h3 style="text-align: center;">legendCraft</h3>
                     <img src="png/server_leg.JPG" alt="legendCraft">
                     <p style="text-align: center;"><b>ip:legendcraft.cn</b></p>
+                    <button id="redirectButton" class="button">查看服务器状态</button>
                 </div>                
             </div>
         </div>
@@ -291,6 +287,10 @@
                 behavior: 'smooth'
             });
         });
+    });
+    // script.js
+    document.getElementById('redirectButton').addEventListener('click', function() {
+        window.location.href = 'https://mcsrvstat.us/server/legendcraft.cn';
     });
 
     </script>
