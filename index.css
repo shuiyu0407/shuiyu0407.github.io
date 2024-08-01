@@ -1,0 +1,162 @@
+/* 添加一些基本样式 */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #50b3a2;
+    z-index: 1000;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    margin-left: 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.wgiger {
+    display: flex;
+    justify-content: center; /* 使内容在水平方向上居中 */
+    margin-right: 28px; /* 确保有单位 */
+    gap: 20px; /* 两个项目之间的间隔 */
+}
+
+.one_x,.two_x,.three_x,.four_x {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sd {
+    display: block;
+    opacity: 0; /* 初始状态为不可见 */
+    animation: fadeInFromBottom 1s ease-in-out forwards;
+}
+.texth1_p {
+    padding: 0; /* 移除内边距 */
+    margin: 0; /* 移除外边距 */
+    text-align: center; /* 使图片居中 */
+}
+.texth1_p img{
+    width: auto; /* 图片宽度保持原始尺寸 */
+    height: auto; /* 高度自适应 */
+    display: inline-block; /* 使用inline-block使图片居中 */
+    max-width: 100%; /* 确保图片不会超出父容器 */
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.xxj{
+    display: flex;
+}
+.xxj1,.xxj2,.xxj3,.xxj4 {
+    display: block;
+}
+.xxj img{
+    width: 200px;
+    height: 200px;
+}
+/* styles.css */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* 定义动画 */
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 应用动画到目标元素 */
+.wgiger,.xxj {
+    opacity: 0; /* 初始状态为不可见 */
+    animation: fadeInFromBottom 1s ease-in-out forwards;
+}
+.red-text {
+    color: red;
+}
